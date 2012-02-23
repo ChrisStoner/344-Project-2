@@ -1,21 +1,40 @@
 $(document).ready(function() {
   $("#start").click(function() {
-	var spot = new Spotter("twitter.search", 
-					{q:"love", period:60, lang:"en"},
+	var one = $("#1").val();
+	var two = $("#2").val();
+	var spot1 = new Spotter("twitter.search", 
+					{q:one, period:60, lang:"en"},
 					{buffer:true, bufferTimeout:750}
 					);
-	var loveCount = 0;
-	spot.register(function(tweet) {
+	var spot2 = new Spotter("twitter.search", 
+					{q:two, period:60, lang:"en"},
+					{buffer:true, bufferTimeout:750}
+					);
+	var oneCount = 0;
+	var twoCount = 0;
+	spot1.register(function(tweet) {
 		var profile_image = "<img src='"+tweet.profile_image_url+"'/>";
 		var twit = $("<p>'"+profile_image+tweet.text+"'</p>");
 		twit.hide();
-		$("#tweets").prepend(twit);
+		$("#tweets1").prepend(twit);
 		twit.slideDown();
-		loveCount = loveCount + 1;
-		var objectToRemove = $("#loveCo p:last-child");
+		oneCount = oneCount + 1;
+		var objectToRemove = $("#oneCo p:last-child");
 		objectToRemove.remove();
-		$("#loveCo").append("<p>'"+loveCount+"'</p>");
+		$("#oneCo").append("<p>'"+oneCount+"'</p>");
 	});
-	spot.start();	 
+	spot2.register(function(tweet) {
+		var profile_image = "<img src='"+tweet.profile_image_url+"'/>";
+		var twit = $("<p>'"+profile_image+tweet.text+"'</p>");
+		twit.hide();
+		$("#tweets2").prepend(twit);
+		twit.slideDown();
+		twoCount = twoCount + 1;
+		var objectToRemove = $("#twoCo p:last-child");
+		objectToRemove.remove();
+		$("#twoCo").append("<p>'"+twoCount+"'</p>");
+	});
+	spot1.start();
+	spot2.start();	 
   });
 });
