@@ -1,3 +1,17 @@
-.spacer250 {
-	height: 250px;
+.spacer50 {
+	height: 50px;
+}
+
+.shift_down {
+	position: relative;
+	top: 5px;
+}
+
+.center_align {
+	text-align: center;
+}
+
+.offset_right {
+	position: relative;
+	left: 34px;
 }

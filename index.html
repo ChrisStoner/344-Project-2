@@ -1,25 +1,41 @@
+<!DOCTYPE html>
 <html>
   <head>
-	<title>Title Placeholder</title>	
+	<title>Trending Trends That Trend</title>	
 	<meta charset="utf-8">
-    	<title>TextLock</title>
     	<link rel="stylesheet" href="stylesheets/src/style.css">
     	<link rel="stylesheet" href="stylesheets/lib/bootstrap/css/bootstrap.css">    
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="scripts/lib/spotter.js"></script>  
+	<script src="scripts/src/script.js"></script>
     	<script src="scripts/lib/bootstrap-modal.js"></script>  
   </head>
   <body style="background-color:#777777">
 	<div class="container">
-		<div class="row spacer250">
-		</div>
 		<div class="row">
-			<div class ="span6 offset3">
-				<h2>Placeholder text for project objective</h2>
+			<div class ="span6 offset3 center_align">
+				<p><h1>Twitter Fight</h1></p>
+				<p><h4>Please enter two words or phrases to battle against each other through twitter mentions</h4><p>
+			</div>
+			<div class ="span2 offset1">
+				<div id ="loveCo"><p>0</p>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="span4 offset4">
-				<input type="text" placeholder="Search box" />				</div>
+			<div class="span4 offset4 offset_right">
+				<input type="text" id="1" 
+					class="input-small shift_down"					       		placeholder="Contestant #1" />
+				<input type="text" id="2" 
+					class="input-small shift_down"
+					placeholder="Contestant #2" />
+				<button type="submit" 
+					class="btn  btn-primary" 
+					id="start">Go!</button>
+			</div>
+		</div>
+		<div class="row">
+			<div id="tweets">-</div>
 		</div>
 	</div>
   </body>
