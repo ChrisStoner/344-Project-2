@@ -3,11 +3,11 @@ $(document).ready(function() {
 	var one = $("#1").val();
 	var two = $("#2").val();
 	var spot1 = new Spotter("twitter.search", 
-					{q:one, period:60, lang:"en"},
+					{q:one, period:10, lang:"en"},
 					{buffer:true, bufferTimeout:750}
 					);
 	var spot2 = new Spotter("twitter.search", 
-					{q:two, period:60, lang:"en"},
+					{q:two, period:10, lang:"en"},
 					{buffer:true, bufferTimeout:750}
 					);
 	var oneCount = 0;
@@ -19,6 +19,9 @@ $(document).ready(function() {
 		$("#tweets1").prepend(twit);
 		twit.slideDown();
 		oneCount = oneCount + 1;
+		$("#tweets1 p:gt(4)").fadeOut(200, function() {
+	    		$("#tweets1 p:gt(4)").remove();
+		});		
 		var objectToRemove = $("#oneCo p:last-child");
 		objectToRemove.remove();
 		$("#oneCo").append("<p>'"+oneCount+"'</p>");
@@ -30,6 +33,9 @@ $(document).ready(function() {
 		$("#tweets2").prepend(twit);
 		twit.slideDown();
 		twoCount = twoCount + 1;
+		$("#tweets2 p:gt(4)").fadeOut(200, function() {
+	   		$("#tweets2 p:gt(4)").remove();
+		});
 		var objectToRemove = $("#twoCo p:last-child");
 		objectToRemove.remove();
 		$("#twoCo").append("<p>'"+twoCount+"'</p>");
