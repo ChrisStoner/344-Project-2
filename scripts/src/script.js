@@ -27,8 +27,8 @@ $(document).ready(function() {
 		$("#tweets1 p:gt(3)").fadeOut(200, function() {
 	    		$("#tweets1 p:gt(3)").remove();
 		});		
-		var objectToRemove = $("#oneCo p:last-child");
-		objectToRemove.remove();
+		//var objectToRemove = $("#oneCo p:last-child");
+		//objectToRemove.remove();
 		//$("#oneCo").append("<p>'"+oneCount+"'</p>");
 	});
 	spot2.register(function(tweet) {
@@ -45,8 +45,8 @@ $(document).ready(function() {
 		$("#tweets2 p:gt(3)").fadeOut(200, function() {
 	   		$("#tweets2 p:gt(3)").remove();
 		});
-		var objectToRemove = $("#twoCo p:last-child");
-		objectToRemove.remove();
+		//var objectToRemove = $("#twoCo p:last-child");
+		//objectToRemove.remove();
 		//$("#twoCo").append("<p>'"+twoCount+"'</p>");
 	});
 	spot1.start();

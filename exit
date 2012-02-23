@@ -1,0 +1,53 @@
+commit 3968f2117f1db0f5cfe93860f754f47fe657d0e7
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Wed Feb 22 23:44:07 2012 -0500
+
+    Made changes to style of tweets, namely text color
+
+commit ecb0a73aded412ec9a5eaeb93500f2b0421a33aa
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Wed Feb 22 23:35:41 2012 -0500
+
+    Added jquery tto remove items from DOM
+
+commit 368e2c533e00c723fc2aba4ca387180a72d59076
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Wed Feb 22 23:29:47 2012 -0500
+
+    Added initial jquery to search for both inputs and display tweets containing them
+
+commit 75da88b8a4484fadcfacda6aabb52fd55eeca4fe
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Wed Feb 22 23:13:50 2012 -0500
+
+    Major update to layout
+
+commit abe141b9e8090a200a37d94306c3e40f5482c72b
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Mon Feb 20 10:54:15 2012 -0500
+
+    Added style and frontpage
+
+commit 758023e59b4a67b71076a09f20facd7a275b3490
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Sun Feb 19 23:19:48 2012 -0500
+
+    Final commit for the night, finished html structure for page
+
+commit 29af77157ed5747d96447084e4cd0811121e463a
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Sat Feb 18 23:30:41 2012 -0500
+
+    Final commit for the night, added more structure
+
+commit 0ae2d3da653f54e1243a6932b6ca97fed55827bc
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Fri Feb 17 22:25:13 2012 -0500
+
+    Final commit for the day, added html structure elements
+
+commit 068f52177cda7d5f118026cbb991e3fb926bf432
+Author: Chris Stoner <cstoner@unca.edu>
+Date:   Fri Feb 10 12:06:22 2012 -0500
+
+    Initial commit
